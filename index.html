@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Space tourism website</title>
+</head>
+<style>
+  body { 
+    background:url(./assets/home/background-home-desktop.jpg) hsl(230,35%,7%) no-repeat 0 0 / cover;
+  }
+  @media screen and (max-width:1355px) {
+    body {
+    background:url(./assets/home/background-home-tablet.jpg ) hsl(230,35%,7%) no-repeat 0 -300px / cover;
+    }
+  }
+  @media screen and (max-width:800px) {
+    body {
+    background-position:0 0 ;
+    }
+  }
+  @media screen and (max-width:620px) { 
+    body {
+    background:url(./assets/home/background-home-mobile.jpg ) hsl(230,35%,7%) no-repeat 0 50px / cover;
+    }
+  }
+  @media screen and (max-width:450px) {
+    body {
+    background-position:0 200px ;
+    }
+  }
+</style>
+<body>
+  <div class="nav">
+    <img src="./assets/shared/logo.svg" alt="" class="logo">
+    <div class="line"></div>
+    <ul class="menu " >
+      <li><img src="./assets/shared/icon-close.svg" alt="" class="close"></li>
+      <li class="active_link">
+        <a href="index.html">00 Home</a>
+      </li>
+      <li>
+        <a href="destination.html">01 Destination</a>
+      </li>
+      <li>
+        <a href="crew.html">02 Crew</a>
+      </li>
+      <li>
+        <a href="technology.html">03 Technology</a>
+      </li>
+    </ul>
+    <img src="./assets/shared/icon-hamburger.svg" alt="" class="ham">
+  </div>
+  <div class="home-hero">
+    <div class="text">
+      <h2>So, you want to travel to</h2>
+      <span>Space</span>
+      <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!</p>
+    </div>
+    <a class="explore" href="destination.html">Explore</a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

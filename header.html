@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body { 
+            background:url(./assets/home/background-home-desktop.jpg) hsl(230,35%,7%);
+            background-position:0 0 ;
+            background-size: cover;
+            background-repeat: no-repeat;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 0px 0;
+        }
+        .logo { 
+            margin: 40px ;
+        }
+        .line { 
+            width:25%;
+            height:2px;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(81.5485px);
+            position:absolute;
+            left: 18%;
+            z-index: 1;
+        }
+        ul { 
+            display:flex;
+            background: rgba(255, 255, 255, 0.04);
+            list-style: none;
+            width: 55%;
+            padding: 30px ;
+            justify-content: space-around;
+            backdrop-filter: blur(81.5485px);
+            position:relative;
+            right: 0;
+        }
+        ul li a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .ham { 
+            display: none;
+        }
+        @media screen and (max-width:1000px) {
+            .line {
+                display: none;
+            }
+            .logo { 
+                margin: 0 20px;
+            }
+            ul { 
+                width: 450px;
+            }
+        }
+        @media screen and (max-width:600px) { 
+            .logo { 
+                margin: 20px;
+            }
+            .ham { 
+                display: block ;
+                margin: 20px;
+            }
+            ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="./assets/shared/logo.svg" alt="" class="logo">
+    <div class="line"></div>
+    <ul id="menu">
+      <li class="active">
+        <a href="index.html">00 Home</a>
+      </li>
+      <li>
+        <a href="destination.html">01 Destination</a>
+      </li>
+      <li>
+        <a href="crew.html">02 Crew</a>
+      </li>
+      <li>
+        <a href="technology.html">03 Technology</a>
+      </li>
+    </ul>
+    <img src="./assets/shared/icon-hamburger.svg" alt="" class="ham">
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+    <title>Space tourism website | Crew</title>
+    <style>
+        body { 
+          background:url(./assets/crew/background-crew-desktop.jpg ) hsl(230,35%,7%) no-repeat 0 0 / cover;
+        }
+        @media screen and (max-width:1355px) {
+          body {
+          background:url(./assets/crew/background-crew-tablet.jpg ) hsl(230,35%,7%) no-repeat 0 -300px / cover ;
+          }
+        }
+        @media screen and (max-width:800px) {
+          body {
+          background-position:0 0 ;
+          }
+        }
+        @media screen and (max-width:620px) { 
+          body {
+          background:url(./assets/crew/background-crew-mobile.jpg ) hsl(230,35%,7%) no-repeat 0 0 / cover;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="./assets/shared/logo.svg" alt="" class="logo">
+        <div class="line"></div>
+        <ul class="menu " >
+          <li><img src="./assets/shared/icon-close.svg" alt="" class="close"></li>
+          <li class="">
+            <a href="index.html">00 Home</a>
+          </li>
+          <li>
+            <a href="destination.html">01 Destination</a>
+          </li>
+          <li class="active_link">
+            <a href="crew.html">02 Crew</a>
+          </li>
+          <li>
+            <a href="technology.html">03 Technology</a>
+          </li>
+        </ul>
+        <img src="./assets/shared/icon-hamburger.svg" alt="" class="ham">
+      </div>
+      <h1 class="naslov">
+          <span>02</span>
+        Meet your crew
+      </h1>
+      <div class="row active crew tab_content1">
+        <div class="sel">
+          <span class="role">Commander </span>
+          <br>
+          <span class="name">Douglas Hurley </span>
+          <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+
+          <div class="row3">
+            <div class="dot active_dot" id="1"></div>
+            <div class="dot"id="2"></div>
+            <div class="dot"id="3"></div>
+            <div class="dot"id="4"></div>
+          </div>
+        </div>
+        <img src="./assets/crew/image-douglas-hurley.png" alt="">
+      </div>
+      <div class="row crew tab_content2">
+        <div class="sel">
+          <span class="role">Mission Specialist  </span>
+          <br>
+          <span class="name">MARK SHUTTLEWORTH</span>
+          <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist</p>
+
+          <div class="row3">
+            <div class="dot" id="1"></div>
+            <div class="dot active_dot"id="2"></div>
+            <div class="dot"id="3"></div>
+            <div class="dot"id="4"></div>
+          </div>
+        </div>
+        <img src="./assets/crew/image-mark-shuttleworth.png" alt="">
+      </div>
+      <div class="row crew tab_content3">
+        <div class="sel">
+          <span class="role">PILOT  </span>
+          <br>
+          <span class="name">Victor Glover</span>
+          <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+
+          <div class="row3">
+            <div class="dot" id="1"></div>
+            <div class="dot"id="2"></div>
+            <div class="dot active_dot"id="3"></div>
+            <div class="dot"id="4"></div>
+          </div>
+        </div>
+        <img src="./assets/crew/image-victor-glover.png" alt="">
+      </div>
+      <div class="row crew tab_content4">
+        <div class="sel">
+          <span class="role">Flight Engineer  </span>
+          <br>
+          <span class="name">Anousheh Ansari</span>
+          <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+
+          <div class="row3">
+            <div class="dot" id="1"></div>
+            <div class="dot"id="2"></div>
+            <div class="dot"id="3"></div>
+            <div class="dot active_dot"id="4"></div>
+          </div>
+        </div>
+        <img src="./assets/crew/image-anousheh-ansari.png" alt="">
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Space tourism website | Destination</title>
+    <style>
+        body { 
+          background:url(./assets/destination/background-destination-desktop.jpg) hsl(230,35%,7%) no-repeat 0 0 / cover;
+        }
+        @media screen and (max-width:1355px) {
+          body {
+            background:url(./assets/destination/background-destination-tablet.jpg) hsl(230,35%,7%) no-repeat 0 0 / cover;
+          }
+        }
+        @media screen and (max-width:800px) {
+          body {
+          background-position:0 0 ;
+          }
+        }
+        @media screen and (max-width:620px) { 
+          body {
+            background:url(./assets/destination/background-destination-mobile.jpg) hsl(230,35%,7%) no-repeat 0 0 / cover;
+
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="./assets/shared/logo.svg" alt="" class="logo">
+        <div class="line"></div>
+        <ul class="menu " >
+          <li><img src="./assets/shared/icon-close.svg" alt="" class="close"></li>
+          <li class="active">
+            <a href="index.html">00 Home</a>
+          </li>
+          <li class="active_link">
+            <a href="destination.html">01 Destination</a>
+          </li>
+          <li>
+            <a href="crew.html">02 Crew</a>
+          </li>
+          <li>
+            <a href="technology.html">03 Technology</a>
+          </li>
+        </ul>
+        <img src="./assets/shared/icon-hamburger.svg" alt="" class="ham">
+      </div>
+      <h1 class="naslov">
+        <span>01 </span>
+          Pick your destination
+      </h1>
+      <div class="row active tab_content1">
+        <img src="./assets/destination/image-moon.png" alt="">
+        <div class="sel">
+          <ul class="destination-tabs">
+            <li class="destination-active-tabs" id="1">Moon</li>
+            <li id="2">Mars</li>
+            <li id="3">Europa</li>
+            <li id="4">Titan</li>
+          </ul>
+          <span class="destination-name">Moon</span>
+          <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+            regain perspective and come back refreshed. While you’re there, take in some history 
+            by visiting the Luna 2 and Apollo 11 landing sites.</p>
+          <div class="line"></div>
+          <div class="row2">          
+            <div class="distance">
+              <h3>Avg. distance</h3>
+              <h2>384,400 km</h2>
+            </div>
+            <div class="travel">
+              <h3>Est. travel time</h3>
+              <h2> 3 days</h2>
+            </div>    
+          </div>      
+        </div>
+      </div>
+      <div class="row tab_content2">
+        <img src="./assets/destination/image-mars.png" alt="">
+        <div class="sel">
+          <ul class="destination-tabs">
+            <li id="1">Moon</li>
+            <li id="2" class="tab destination-active-tabs">Mars</li>
+            <li id="3">Europa</li>
+            <li id="4">Titan</li>
+          </ul>
+          <span class="destination-name">Mars</span>
+          <p> Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+            the tallest planetary mountain in our solar system. It’s two and a half times 
+            the size of Everest!.</p>
+          <div class="line"></div>
+          <div class="row2">          
+            <div class="distance">
+              <h3>Avg. distance</h3>
+              <h2>225 mil. km</h2>
+            </div>
+            <div class="travel">
+              <h3>Est. travel time</h3>
+              <h2> 9 months</h2>
+            </div>    
+          </div>      
+        </div>
+      </div>
+      <div class="row tab_content3">
+        <img src="./assets/destination/image-europa.png" alt="">
+        <div class="sel">
+          <ul class="destination-tabs">
+            <li id="1">Moon</li>
+            <li id="2">Mars</li>
+            <li id="3" class="tab destination-active-tabs">Europa</li>
+            <li id="4">Titan</li>
+          </ul>
+          <span class="destination-name">Europa</span>
+          <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+            winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+            ice skating, curling, hockey, or simple relaxation in your snug 
+            wintery cabin.</p>
+          <div class="line"></div>
+          <div class="row2">          
+            <div class="distance">
+              <h3>Avg. distance</h3>
+              <h2>628 mil. km</h2>
+            </div>
+            <div class="travel">
+              <h3>Est. travel time</h3>
+              <h2> 3 years</h2>
+            </div>    
+          </div>      
+        </div>
+      </div>
+      <div class="row tab_content4">
+        <img src="./assets/destination/image-titan.png" alt="">
+        <div class="sel">
+          <ul class="destination-tabs">
+            <li id="1">Moon</li>
+            <li id="2">Mars</li>
+            <li id="3">Europa</li>
+            <li id="4" class="destination-active-tabs">Titan</li>
+          </ul>
+          <span class="destination-name">Titan</span>
+          <p>The only moon known to have a dense atmosphere other than Earth, Titan 
+            is a home away from home (just a few hundred degrees colder!). As a 
+            bonus, you get striking views of the Rings of Saturn.
+          </p>
+          <div class="line"></div>
+          <div class="row2">          
+            <div class="distance">
+              <h3>Avg. distance</h3>
+              <h2>1.6 bil. km</h2>
+            </div>
+            <div class="travel">
+              <h3>Est. travel time</h3>
+              <h2>7 years</h2>
+            </div>    
+          </div>      
+        </div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
